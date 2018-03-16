@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    tools:context="com.example.gkdoe.skate.LoginActivity">
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:id="@+id/textView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textSize="24dp" />
+    </TableRow>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/skate"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <TableRow>
+        <TextView android:layout_height="wrap_content"
+            android:text="@string/account"/>
+        <EditText
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_text_account"
+            android:hint="@string/write_account"
+            android:maxLines="1" />
+    </TableRow>
+
+    <TableRow>
+        <TextView android:layout_height="wrap_content"
+            android:text="@string/password"/>
+        <EditText
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_text_password"
+            android:hint="@string/write_password"
+            android:maxLines="1" />
+    </TableRow>
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remember_password"
+            android:id="@+id/remember_password" />
+    </TableRow>
+
+    <TableRow android:id="@+id/tableRow2">
+        <Button
+            android:id="@+id/button_login"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:layout_span="2" />
+    </TableRow>
+
+
+</TableLayout>
